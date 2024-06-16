@@ -3,6 +3,7 @@ left_key = keyboard_check(vk_left);
 up_key = keyboard_check(vk_up);
 down_key = keyboard_check(vk_down);
 
+//random comment to test git
 
 //get xspd and yspd
 xspd = (right_key - left_key) * move_spd;
