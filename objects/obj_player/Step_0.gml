@@ -46,7 +46,7 @@ yspd = 0;
 
 //dialog
 if place_meeting(x, y, obj_mom) == true && keyboard_check_pressed(vk_enter){
-;
+instance_place(x,y,obj_droggo_dialog);
 
 }
 
