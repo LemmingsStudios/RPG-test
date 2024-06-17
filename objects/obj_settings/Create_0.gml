@@ -1,1 +1,1 @@
-global.font_main = font_add(fnt_pixel, 12, false, false, 32, 127);
+global.font_main = font_add_sprite(spr_font, 32, true, 1);
