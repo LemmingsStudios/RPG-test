@@ -15,12 +15,14 @@ txtb_img_spd = 0;
 //the text
 page = 0;
 page_number = 0;
-text[0] = "Here's a small bit of dialog to see if everything works";
-text[1] = "Wow what a good bit of dialog";
-text[2] = "word";
-text[3] = "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Sentence";
+text[0] = ""
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_spd = 1;
+//options
+option[0] = "";
+option_link_id[0] = -1;
+option_pos = 0;
+option_number = 0;
 
 setup = false;

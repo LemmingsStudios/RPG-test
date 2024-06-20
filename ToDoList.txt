@@ -1,0 +1,28 @@
+Titlescreen:
+make settings function or remove
+make a save/load option function
+
+House:
+Make mom have dialog/work properly
+sleep to recover HP?
+
+Town:
+make a shop for weapons and potions
+make neighbors with silly dialog or remove extra houses
+
+
+Overworld:
+Create Battle UI and system
+Add random encounters
+
+Castle/Dungeon:
+make boss that does not function off random encounter system
+make a way to retrieve sister from castle and return home
+
+Global:
+Menu UI (font+background)
+Font Sprite
+Pause Menu/equip menu/item/etc
+Character Sprites
+Enemy Sprites
+Tile Sets
