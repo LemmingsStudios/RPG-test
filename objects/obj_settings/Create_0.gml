@@ -1,1 +1,1 @@
-global.font_main = font_add_sprite(spr_font, 32, true, 1);
+global.font_main = font_add("Silver.ttf", 13, 0, 0, 0, 0)

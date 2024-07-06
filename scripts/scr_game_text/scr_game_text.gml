@@ -27,14 +27,22 @@ switch(_text_id)
 		scr_text("Oh thank you Droggo!");
 		break;
 		case "mom 1 - no":
-		scr_text("Oi you've always been a bit of a cunt");
+		scr_text("Oi you've always been a bit of a cunt.");
+		scr_option("Oi fuck ya mate","mom - end");
+		scr_option("Sorry Mum", "mom - continue");
+		break;
+		case "mom - end":
+		room_goto(rm_title_screen);
+		break;
+		case "mom - continue":
+		scr_text("Best stop being a little twat then?");
 		break;
 		
 		
 	case "blacksmith":
 	scr_text("Oi droggo!");
 	scr_text("Bet you'll be needin that sword sharpened for that dragon then?");
-	scr_text("Come to my shop for any armor");
+	scr_text("Come to my shop if you need any armor!");
 		break;
 	
 	case "npc 3":

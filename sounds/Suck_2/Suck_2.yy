@@ -6,7 +6,7 @@
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "bitRate":256,
   "compression":0,
   "conversionMode":0,
   "duration":0.079048,
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"Suck_2.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.25,
 }

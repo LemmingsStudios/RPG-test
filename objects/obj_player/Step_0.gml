@@ -90,3 +90,12 @@ if keyboard_check_pressed(vk_enter){
 		}
     }
 }
+
+if keyboard_check(vk_control)
+	{
+		if !instance_exists(obj_inventory_menu)
+			{
+			audio_play_sound(Suck_2, 1000, 0)
+			instance_create_depth(x, y, -9999,obj_inventory_menu)
+			}
+	}
