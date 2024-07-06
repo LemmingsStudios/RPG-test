@@ -28,7 +28,10 @@ if accept_key{
 	case 0:
 switch(pos){
 //Start Game
-case 0: room_goto_next(); break;
+case 0: room_goto_next(); 
+audio_stop_all();
+audio_play_sound(bgm_town, 1, true);
+break;
 //Settings
 case 1: menu_level =1; break;
 //quit game

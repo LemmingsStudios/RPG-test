@@ -54,6 +54,18 @@ if place_meeting(x, y, obj_mom) == true && keyboard_check_pressed(vk_enter){
 x += xspd;
 y += yspd;
 
+//run button
+if keyboard_check_pressed(vk_shift)
+{
+move_spd = 1.5;
+image_speed = 1.5;
+}
+if keyboard_check_released(vk_shift)
+{
+move_spd = 1;
+image_speed = 1;
+}
+
 
 
 //animate
@@ -64,3 +76,17 @@ image_index = 0;
 
 //depth
 depth = -bbox_bottom;
+
+//dialog interaction
+if keyboard_check_pressed(vk_enter){
+    var ins = instance_nearest(x,y,obj_npc);
+
+    if instance_exists(ins)
+    && distance_to_object(ins)<5
+	{
+		if !instance_exists(obj_textbox)
+		{
+        with(ins)create_textbox(text_id);
+		}
+    }
+}
