@@ -57,7 +57,7 @@ y += yspd;
 //run button
 if keyboard_check_pressed(vk_shift)
 {
-move_spd = 1.5;
+move_spd = 2;
 image_speed = 1.5;
 }
 if keyboard_check_released(vk_shift)
