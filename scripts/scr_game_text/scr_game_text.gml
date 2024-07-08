@@ -50,6 +50,11 @@ switch(_text_id)
 	scr_text("ouihrgoidgoihgd");
 	scr_text("ihugdugfnujgf");
 		break;
+		
+	case "bs shop":
+	scr_text("Oi, sorry Droggo we fresh outta swords mate.");
+	scr_text("Besides I see you ain't got no money.");
+	scr_text("Why don't you come back when you've earned some gold?");
 	
 	}
 

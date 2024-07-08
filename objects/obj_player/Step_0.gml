@@ -82,18 +82,20 @@ if keyboard_check_pressed(vk_enter){
     var ins = instance_nearest(x,y,obj_npc);
 
     if instance_exists(ins)
-    && distance_to_object(ins)<5
+    && distance_to_object(ins)<6
 	{
-		if !instance_exists(obj_textbox)
+		if !instance_exists(obj_pauser)
 		{
         with(ins)create_textbox(text_id);
 		}
     }
 }
 
+
+//In-game menu system
 if keyboard_check(vk_control)
 	{
-		if !instance_exists(obj_inventory_menu)
+		if !instance_exists(obj_pauser)
 			{
 			audio_play_sound(Suck_2, 1000, 0)
 			instance_create_depth(x, y, -9999,obj_inventory_menu)
