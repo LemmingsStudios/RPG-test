@@ -12,3 +12,22 @@ for (var i = 0; i <array_length(inv); i++)
 		selected_item = i;
 		}
 	}
+	
+
+if selected_item != -1
+	{
+	
+	//use an item
+	if mouse_check_button_pressed(mb_left)
+		{
+		inv[selected_item].effect();
+		}
+		
+	//dropping an item
+	if mouse_check_button_pressed(mb_right) && inv[selected_item].can_drop == true
+		{
+		//get rid of the item
+		array_delete(inv, selected_item, 1);
+		}
+		
+	}

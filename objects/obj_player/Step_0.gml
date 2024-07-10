@@ -98,6 +98,6 @@ if keyboard_check(vk_control)
 		if !instance_exists(obj_pauser)
 			{
 			audio_play_sound(Suck_2, 1000, 0)
-			instance_create_depth(x, y, -9999,obj_inventory_menu)
+			instance_create_depth(x, y, -9999,obj_pause_menu)
 			}
 	}

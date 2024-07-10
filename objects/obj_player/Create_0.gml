@@ -3,6 +3,8 @@ yspd = 0;
 
 move_spd = 1;
 
+hp = 10
+
 
 sprite[RIGHT] = spr_player_right;
 sprite[UP] = spr_player_up;

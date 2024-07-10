@@ -31,27 +31,58 @@ switch(pos){
 //Resume Game
 case 0: instance_destroy();
 break;
-//Settings
+//Items
 case 1: menu_level =1; break;
+
+//Equipment
+case 2: menu_level =2; break; 
+
 //quit game
-case 2: menu_level =2; break;
+case 3: menu_level =3; break;
 }
 break;
 
 //Inventory
 case 1:
 switch(pos){
-//window size
+//
 case 0:
 
 break;
 
-//brightness
+//
 case 1:
 
 break;
 
-//controls
+//
+case 2:
+
+break;
+
+//
+case 3:
+menu_level = 0;
+break;
+
+}
+
+break;
+
+//
+case 2:
+switch(pos){
+//
+case 0:
+
+break;
+
+//
+case 1:
+
+break;
+
+//
 case 2:
 
 break;
@@ -65,7 +96,7 @@ break;
 
 break;
 	
-case 2:
+case 3:
 switch(pos){
 
 case 0:
@@ -74,6 +105,8 @@ break;
 
 case 1:
 room_goto(rm_title_screen);
+instance_destroy(obj_item_manager);
+instance_destroy();
 break;
 }
 }
