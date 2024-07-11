@@ -30,7 +30,7 @@ global.item_list =
 			obj_player.hp += 10;
 			
 			//get rid of the item
-			array_delete(global.inv, selected_item, 1);
+			ds_list_delete(global.inven,obj_inv_menu.pos);
 			}
 		
 		),
@@ -46,7 +46,7 @@ global.item_list =
 			instance_create_depth(obj_player.x,obj_player.y, 0, obj_bomb_weapon)
 			
 			//get rid of the item
-			array_delete(global.inv, selected_item, 1);
+			ds_list_delete(global.inven,obj_inv_menu.pos);
 			}
 		
 		),
@@ -57,7 +57,7 @@ global.item_list =
 	
 //create the inventory
 global.inv = array_create(0);
-
+global.inven = ds_list_create();
 
 selected_item = -1;
 	

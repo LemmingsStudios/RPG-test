@@ -6,6 +6,14 @@ accept_key = keyboard_check_pressed(vk_enter);
 //store number of options in current menu
 op_length = array_length(option[menu_level])
 
+selected_item = option[menu_level, pos];
+
+//get item names
+for (var i = 0; i < ds_list_size(global.inven); i++)
+	{
+		option[0, i] = ds_list_read(global.inven, global.inven[| i].name);
+	}
+
 //move through the menu
 pos += down_key - up_key;
 if pos >= op_length {pos = 0}
@@ -29,6 +37,17 @@ if accept_key{
 case 0:
 switch(pos){
 //Put cases here
+case pos:
+
+if accept_key && ds_list_size(global.inven) != 0{
+global.inven[| pos].effect();
+pos = 0;
+
+}
+
+break;
+
+
 
 }
 break;
@@ -42,10 +61,8 @@ break;
 op_length = array_length(option[menu_level])
 }
 
-for (var i = 0; i <array_length(global.inv); i++)
-	{
-	
-	}
+
+
 
 
 if keyboard_check_released(vk_shift)

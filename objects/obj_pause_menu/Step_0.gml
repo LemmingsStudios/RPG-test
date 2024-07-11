@@ -35,7 +35,12 @@ switch(pos){
 case 0: instance_destroy();
 break;
 //Items
-case 1: instance_create_depth(x,y,-9999, obj_inv_menu) break;
+case 1: 
+if global.inv !=0 
+{
+instance_create_depth(x,y,-9999, obj_inv_menu)
+}
+break;
 
 //Equipment
 case 2: menu_level =2; break; 

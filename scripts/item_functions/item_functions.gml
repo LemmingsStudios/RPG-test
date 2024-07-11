@@ -2,6 +2,6 @@
 function item_add(_item)
 	{
 	
-	array_push( global.inv, _item );
+	ds_list_add(global.inven, _item );
 	
 	}

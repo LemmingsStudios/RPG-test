@@ -1,33 +1,33 @@
 //get selected item
 
 selected_item = -1;
-for (var i = 0; i <array_length(global.inv); i++)
-	{
-	var _xx = camera_get_view_x(view_camera[0]) + screen_bord;
-	var _yy = camera_get_view_y(view_camera[0]) + screen_bord + sep*i;
-	
-	
-	if mouse_x > _xx && mouse_x < _xx+8 && mouse_y > _yy && mouse_y < _yy + 8
-		{
-		selected_item = i;
-		}
-	}
-	
-
-if selected_item != -1
-	{
-	
-	//use an item
-	if mouse_check_button_pressed(mb_left)
-		{
-		global.inv[selected_item].effect();
-		}
-		
+//for (var i = 0; i <array_length(global.inv); i++)
+//	{
+//	var _xx = camera_get_view_x(view_camera[0]) + screen_bord;
+//	var _yy = camera_get_view_y(view_camera[0]) + screen_bord + sep*i;
+//	
+//	
+//	if mouse_x > _xx && mouse_x < _xx+8 && mouse_y > _yy && mouse_y < _yy + 8
+//		{
+//		selected_item = i;
+//		}
+//	}
+//	
+//
+//if selected_item != -1
+//	{
+//	
+//	//use an item
+//	if mouse_check_button_pressed(mb_left)
+//		{
+//		global.inv[selected_item].effect();
+//		}
+//		
 	//dropping an item
-	if mouse_check_button_pressed(mb_right) && global.inv[selected_item].can_drop == true
-		{
-		//get rid of the item
-		array_delete(global.inv, selected_item, 1);
-		}
+//	if mouse_check_button_pressed(mb_right) && global.inv[selected_item].can_drop == true
+//		{
+//		//get rid of the item
+//		array_delete(global.inv, selected_item, 1);
+//		}
 		
-	}
+//	}

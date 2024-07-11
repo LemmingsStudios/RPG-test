@@ -6,8 +6,12 @@ op_space = 16;
 
 pos = 0;
 
-//pause menu
-option[global.inv[0]] = 0;
+//inventory menu
+option[0, 0] = "";
+
+selected_item = -1;
+
+
 
 op_length = 0;
 menu_level = 0;
