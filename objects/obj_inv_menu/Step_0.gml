@@ -11,7 +11,7 @@ selected_item = option[menu_level, pos];
 //get item names
 for (var i = 0; i < ds_list_size(global.inven); i++)
 	{
-		option[0, i] = ds_list_read(global.inven, global.inven[| i].name);
+		option[0, i] = global.inven[| i].name;
 	}
 
 //move through the menu
@@ -42,6 +42,8 @@ case pos:
 if accept_key && ds_list_size(global.inven) != 0{
 global.inven[| pos].effect();
 pos = 0;
+
+break;
 
 }
 
