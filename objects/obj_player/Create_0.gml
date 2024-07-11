@@ -3,7 +3,14 @@ yspd = 0;
 
 move_spd = 1;
 
-hp = 10
+hp = 30;
+mp = 10;
+str = 5;
+vit = 5;
+dex = 5;
+agi = 5;
+int = 5;
+xp = 0;
 
 
 sprite[RIGHT] = spr_player_right;

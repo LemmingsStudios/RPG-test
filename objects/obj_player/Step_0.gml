@@ -54,18 +54,6 @@ if place_meeting(x, y, obj_mom) == true && keyboard_check_pressed(vk_enter){
 x += xspd;
 y += yspd;
 
-//run button
-if keyboard_check_pressed(vk_shift)
-{
-move_spd = 2;
-image_speed = 1.5;
-}
-if keyboard_check_released(vk_shift)
-{
-move_spd = 1;
-image_speed = 1;
-}
-
 
 
 //animate

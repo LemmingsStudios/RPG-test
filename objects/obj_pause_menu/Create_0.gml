@@ -13,7 +13,7 @@ option[0, 2] = "Equipment";
 option[0, 3] = "Quit to Menu";
 
 //inventory menu
-option[1, 0] = obj_item_manager.inv[0];
+option[1, 0] = "Item";
 option[1, 1] = "Name";
 option[1, 2] = "Placeholder";
 option[1, 3] = "Back";
