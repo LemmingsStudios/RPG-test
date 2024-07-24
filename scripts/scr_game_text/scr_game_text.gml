@@ -53,8 +53,22 @@ switch(_text_id)
 		
 	case "bs shop":
 	scr_text("Oi, sorry Droggo we fresh outta swords mate.");
-	scr_text("Besides I see you ain't got no money.");
-	scr_text("Why don't you come back when you've earned some gold?");
+	scr_text("How about some potions or some shite?");
+		scr_option("Buy", "buy menu")
+		scr_option("Sell", "sell menu")
+		scr_option("Leave", "exit")
+	break;
+	case "buy menu":
+	instance_destroy();
+	instance_create_depth(x,y,-9999, obj_inv_menu);
+	break;
+	case "sell menu":
+	instance_destroy();
+	instance_create_depth(x,y,-9999, obj_inv_menu);
+	break;
+	case "exit":
+	instance_destroy();
+	break;
 	
 	}
 

@@ -15,7 +15,8 @@ if pos < 0 {pos = op_length - 1}
 }
 
 //input sounds
-if up_key or down_key == true{
+if up_key or down_key == true && !instance_exists(obj_submenu) 
+{
 audio_play_sound(Select_1,1,false);
 }
 
@@ -27,7 +28,7 @@ audio_play_sound(Confirm_1,1,false);
 
 
 //using the options
-if accept_key{
+if accept_key && !instance_exists(obj_submenu){
 	
 	var _sml = menu_level;
 	switch(menu_level){

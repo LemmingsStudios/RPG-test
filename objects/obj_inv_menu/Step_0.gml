@@ -26,7 +26,6 @@ if accept_key == true && !ds_list_empty(global.inven)
 		case pos:
 		audio_play_sound(Confirm_1,1,false);
 		global.inven[| pos].effect();
-		instance_destroy();
 		break;
 		}
 }
