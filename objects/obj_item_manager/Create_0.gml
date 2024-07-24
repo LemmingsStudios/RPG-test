@@ -58,7 +58,7 @@ global.item_list =
 //create the inventory
 global.inv = array_create(0);
 global.inven = ds_list_create();
-
+inv_max = 8;
 selected_item = -1;
 	
 //for drawing and mouse positions

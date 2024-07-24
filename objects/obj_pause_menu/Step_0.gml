@@ -19,9 +19,12 @@ if up_key or down_key == true{
 audio_play_sound(Select_1,1,false);
 }
 
-if accept_key == true{
+if accept_key && !instance_exists(obj_submenu)
+{
 audio_play_sound(Confirm_1,1,false);
 }
+
+
 
 //using the options
 if accept_key{
@@ -128,5 +131,6 @@ op_length = array_length(option[menu_level])
 
 if keyboard_check_pressed(vk_shift) && !instance_exists(obj_submenu)
 	{
+	audio_play_sound(Confirm_1,1,false);
 	instance_destroy();
 	}

@@ -6,12 +6,9 @@ op_space = 16;
 
 pos = 0;
 
-//inventory menu
-option[0, 0] = "";
+op_height = "";
 
 selected_item = -1;
-
-
 
 op_length = 0;
 menu_level = 0;
