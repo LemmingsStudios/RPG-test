@@ -30,7 +30,7 @@ global.item_list =
 			obj_player.hp += 10;
 			
 			//get rid of the item
-			ds_list_delete(global.inven,obj_inv_menu.pos);
+			ds_list_delete(global.inven, obj_inv_menu.pos);
 			}
 		
 		),
