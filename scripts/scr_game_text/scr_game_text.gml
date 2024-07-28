@@ -60,7 +60,7 @@ switch(_text_id)
 	break;
 	case "buy menu":
 	instance_destroy();
-	instance_create_depth(x,y,-9999, obj_inv_menu);
+	instance_create_depth(x,y,-9999, obj_buy_menu);
 	break;
 	case "sell menu":
 	instance_destroy();

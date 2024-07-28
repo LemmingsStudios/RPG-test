@@ -1,7 +1,7 @@
 depth = -9998;
 
 //wallet
-global.gold = 0;
+global.gold = 100;
 
 //item constructor
 function create_item(_name, _desc, _spr, _candrop, _effect) constructor
@@ -49,6 +49,55 @@ global.item_list =
 			ds_list_delete(global.inven,obj_inv_menu.pos);
 			}
 		
+		),
+		
+	hp_pot : new create_item(
+		"Health Potion",
+		"Recovers HP.",
+		spr_burger,
+		true,
+		
+		function()
+			{
+			obj_player.hp += 10;
+			
+			//get rid of the item
+			ds_list_delete(global.inven, obj_inv_menu.pos);
+			}
+			
+		),
+		
+	mp_pot : new create_item(
+		"Magic Potion",
+		"Recovers MP.",
+		spr_burger,
+		true,
+		
+		function()
+			{
+			obj_player.mp += 5;
+			
+			//get rid of the item
+			ds_list_delete(global.inven, obj_inv_menu.pos);
+			}
+			
+		),
+		
+	super_pot : new create_item(
+		"Super Potion",
+		"Recovers HP and MP.",
+		spr_burger,
+		true,
+		
+		function()
+			{
+			obj_player.hp += 10;
+			obj_player.mp += 5;
+			
+			//get rid of the item
+			ds_list_delete(global.inven, obj_inv_menu.pos);
+			}
+			
 		),
 		
 	}

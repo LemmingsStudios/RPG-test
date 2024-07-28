@@ -47,6 +47,7 @@
     {"id":{"name":"obj_bed","path":"objects/obj_bed/obj_bed.yy",},},
     {"id":{"name":"obj_blacksmith","path":"objects/obj_blacksmith/obj_blacksmith.yy",},},
     {"id":{"name":"obj_bomb_weapon","path":"objects/obj_bomb_weapon/obj_bomb_weapon.yy",},},
+    {"id":{"name":"obj_buy_menu","path":"objects/obj_buy_menu/obj_buy_menu.yy",},},
     {"id":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},},
     {"id":{"name":"obj_dialogParent","path":"objects/obj_dialogParent/obj_dialogParent.yy",},},
     {"id":{"name":"obj_droggo_dialog","path":"objects/obj_droggo_dialog/obj_droggo_dialog.yy",},},
